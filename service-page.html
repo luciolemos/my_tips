@@ -33,9 +33,8 @@
                         <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="service-page.html">Linux Mint</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="catalog-page.html">Catalog</a></li>
-
                         <li class="nav-item" role="presentation"><a class="nav-link" href="verificando_versoes.html">Verificando Versoes</a></li>
-                        <!--                    <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <!--                <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Pricing</a></li>
                                             <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
                                             <li class="nav-item" role="presentation"><a class="nav-link" href="slider.html">Slider</a></li>
                                             <li class="nav-item" role="presentation"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
@@ -139,38 +138,47 @@
                 <!-- Example row of columns -->
                 <div class="row">
                     <div class="col-md-12">
-                        <h2><strong>Linux Mint</strong></h2>
-                        <p>O Linux Mint é uma distribuição Linux irlandesa, baseada no Ubuntu 18.04.1 LTS (Bionic Beaver) e é executado no ambiente de desktop do Cinnamon 4.0.
-                            Vem com o linux-firmware 1.173.2 e o kernel do Linux 4.15.0-20 e inclui mudanças que supostamente tornam o login no desktop mais fácil e amigável.
-                            Possui duas versões: uma baseada em Ubuntu (com o qual é totalmente compatível e partilha os mesmos repositórios) e outra versão baseada em Debian. 
-                            Suporta muitos idiomas, incluindo a língua portuguesa, e utiliza o Cinnamon como seu principal ambiente de desktop.
-                            Linux Mint diferencia-se do Ubuntu e do Debian por incluir drivers e codecs proprietários por padrão e por alguns recursos que permitem fazer em modo gráfico(GUI) configurações que em ambos os sistemas são feitas através do modo texto. 
-                            Utiliza por padrão o desktop Cinnamon, um derivado do GNOME, com um menu no painel inferior junto à barra de tarefas (o MintMenu), similar ao menu do KDE, ou o menu "Iniciar" do Windows.
-                            É um sistema operacional moderno, elegante e confortável, que é poderoso e fácil de usar" e possui suporte multimídia pronto para o uso, incluindo alguns softwares proprietários e vem com uma variedade de aplicativos gratuitos e de código aberto.
-                        </p>   
-                        <p><a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mint" href="#mint" role="button">my tips &raquo;</a></p>
+                        <div class="container mt-3">
+                            <h2>Linux Mint</h2>
+                            <p>O Linux Mint é uma distribuição Linux irlandesa, baseada no Ubuntu 18.04.1 LTS</p>
+                            <div class="media border p-3">
+                                <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                    <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
+                                    <p>O Mint é executado no ambiente de desktop do Cinnamon 4.0 e vem com o linux-firmware 1.173.2 e o kernel do Linux 4.15.0-20. Inclui mudanças que tornam o login no desktop mais fácil e amigável.
+                                        Possui duas versões: uma baseada em Ubuntu (com o qual é totalmente compatível e partilha os mesmos repositórios) e outra baseada em Debian. 
+                                        Suporta muitos idiomas, inclusive o português e utiliza o Cinnamon como seu principal ambiente de desktop.
+                                        Diferencia-se do Ubuntu e do Debian por incluir drivers e codecs proprietários por <i>default</i> e por alguns recursos que permitem fazer em modo gráfico(<i>GUI</i>) 
+                                        configurações que em ambos os sistemas são feitas através de linha de comando (<i>CLI</i>). 
+                                        Utiliza por padrão o desktop Cinnamon, um derivado do GNOME, com um menu no painel inferior junto à barra de tarefas (o MintMenu), similar ao menu do KDE, ou ao menu "Iniciar" do Windows.
+                                        É um sistema operacional moderno, elegante, confortável e fácil de usar. Possui suporte multimídia pronto para o uso, incluindo alguns softwares proprietários e uma ampla gama de aplicativos gratuitos e de código aberto.
+                                    </p>
 
-
-                        <div id="mint" class="collapse">                                                        
-                            <p>1. Navegando entre diretórios a partir da raiz: luciolemos@dell:~$ cd /opt/lampp/htdocs</p>
-                            <p>2. Criando um diretório com permissões de administrador: luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir dicas</p>
-                            <p>3. Verificando as permissões: luciolemos@dell:/opt/lampp/htdocs$ ls -lt</p>
-                            <p>4. Danodo permissão de escrita no servidor lampp: luciolemos@dell:~$ sudo chmod -R 777 /opt/lampp/htdocs</p>
-
+                                    <p>
+                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mint" href="#mint" role="button">my tips &raquo;</a>
+                                    </p>
+                                    <div id="mint" class="collapse">                                                        
+                                        <p>1. Navegando entre diretórios a partir da raiz: luciolemos@dell:~$ cd /opt/lampp/htdocs</p>
+                                        <p>2. Criando um diretório com permissões de administrador: luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir dicas</p>
+                                        <p>3. Verificando as permissões: luciolemos@dell:/opt/lampp/htdocs$ ls -lt</p>
+                                        <p>4. Dando ao usuário permissão de escrita no servidor lampp: luciolemos@dell:~$ sudo chmod -R 777 /opt/lampp/htdocs</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>                   
                 </div>
             </div> <!-- /container -->
         </section>
 
-       <div>
-           <footer class="page-footer dark">
+        <div>
+            <footer class="page-footer dark">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3">
                             <h5>Get started</h5>
                             <ul>
-                              <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="service-page.html">Linux Mint</a></li>
                                 <li><a href="catalog-page.html">Catálogo</a></li>
                                 <li><a href="verificando_versoes.html">Verificando versões</a></li>
@@ -199,12 +207,12 @@
                                 <li><a href="#">Terms of Use</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div class="footer-copyright">                    
-                    <p class="text-center">Desenvolvido pelo 1º Ten QAO <strong>L</strong>úcio Flávio <strong>Lemos</strong></p>
+                    <p class="text-center">Desenvolvido pelo 1º Ten QAO <strong>L</strong>úcio Flávio <strong>Lemos</strong>, <i>Full Stack Developer</i></p>
                     <p>My Tips © 2019 </p>
                 </div>
             </footer>
