@@ -10,6 +10,14 @@
         <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
         <link rel="stylesheet" href="assets/css/smoothproducts.css">
+
+
+        <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+        <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+        <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+
+        <script src="https://kit.fontawesome.com/50e1549ef6.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
@@ -59,6 +67,7 @@
             <div class="container">
 
                 <div class="">
+                    <!--<a class="navbar-brand" href="#">Logo</a>-->
                     <a class="navbar-brand " href="#">
                         <img src="assets/img/mytips.jpeg" alt="My Tips" style="width:70px;">
                     </a>
@@ -72,14 +81,28 @@
                 </button>
 
 
-                <div class="collapse navbar-collapse"
-                     id="navcol-1">
+                <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="service-page.html">Linux Mint</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="netbeans-page.html">Netbeans</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="catalog-page.html">Catalog</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="verificando-versoes.html">Verificando Versoes</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="service-page.html">Action</a>
+                                <a class="dropdown-item" href="blog-post.html">Action</a>
+                                <a class="dropdown-item" href="login.html">Action</a>
+                                <a class="dropdown-item" href="testimonials.html">Action</a>
+                                <a class="dropdown-item" href="registration.html">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="contact-us.html">Something else here</a>
+                            </div>
+                        </li>
 
                         <!--                    <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Pricing</a></li>
                                             <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
@@ -101,26 +124,35 @@
         </nav>
 
         <main class="page landing-page">
-            <!--          
+
+            <!--
             <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(9, 162, 255, 0.85);">
                 <div class="text">
                     <h2>Lorem ipsum dolor sit amet.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-outline-light btn-lg" type="button">Learn More</button>
                 </div>
             </section>
-            --> 
-
+            -->
 
             <!--Início do jumbotron-->
-            <div class="jumbotron">
+            <div class="jumbotron" style=" padding:30px 25px;">
                 <div class="container">
+                    <!--
                     <h1 class="display-3">My Tips</h1>
+                    -->
+                    <a class="navbar-brand " href="#">
+                        <img src="assets/img/mytips1_1.png" alt="My Tips" style="width:200px;">
+                    </a>
 
-                    <!--                    <p><a class="btn btn-primary btn-sm" href="#" role="button">Learn more &raquo;</a></p>-->
+                    <!--
+                    <p>
+                        <a class="btn btn-primary btn-sm" href="#" role="button">Learn more &raquo;</a>
+                    </p>
+                    -->
 
                     <div>
                         <p>
-                            <button class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#jumbo" type="button">Leia mais &raquo;</button>
+                            <button class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#jumbo" type="button">Saiba mais &raquo;</button>
                         </p>
                     </div>
                     <div id="jumbo" class="collapse">                                                        
@@ -139,12 +171,10 @@
                         <p>                                                    
                             My tips é uma compilação de comandos executados em modo CLI no <a href="service-page.html">Linux Mint 19.1</a> a partir do terminal do <a href="netbeans-page.html">Apache Netbeans IDE 11.2</a>
                         </p>
-
                     </div>                    
                 </div>
             </div>
-            <!--Término do jumbotron-->
-
+            <!--Término do jumbotron-->            
 
             <!--Início da Seção 1-->
             <section id="linux_mint" class="container-fluid" style="padding-top:0px;padding-bottom:10px">
@@ -152,65 +182,70 @@
                     <!-- Example row of columns -->
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="container mt-3">
-                                <!--
-                                <div class="">
-                                    <a href="service-page.html">
-                                        <img src="assets/img/linux.png" alt="My Tips" style="width:200px;">
+
+                            <!--
+                            <div class="">
+                                <a href="service-page.html">
+                                    <img src="assets/img/linux.png" alt="My Tips" style="width:200px;">
+                                    <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
+                                </a>
+                            </div>
+                            -->
+                            <!--
+                            <h2>Linux Mint</h2>
+                            -->
+                            <img src="assets/img/linux.png" alt="linuxmint" class="mr-3 mt-3 rounded-0" style="width:210px; height: 80px">
+                            <p>
+                                O Linux Mint é um sistema operacional moderno, elegante e confortável, poderoso e fácil de usar.
+                                É uma das distribuições Linux de desktop mais populares do mundo.                                   
+                            </p>
+                            <div class="media border p-3">
+                                <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                    <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
+                                    <p>
+                                        Sua versão estável, o <strong>Linux Mint 19.2</strong>, codinome "Tina" é uma versão LTS 
+                                        (versão de suporte de longo prazo), sigla inglesa para <i>Long Term Support</i>, suportada 
+                                        até o ano de 2023. Ele vem com software atualizado, traz aprimoramentos e muitos novos recursos para 
+                                        tornar sua experiência com a área de trabalho mais confortável. Suas principais caracteŕistcas são:
+                                    </p>
+                                    <ul>                                            
+                                        <li>Funciona imediatamente, com suporte completo a multimídia e é extremamente fácil de usar;</li>
+                                        <li>É gratuito e de código aberto;</li>
+                                        <li>É orientado pela comunidade;</li>
+                                        <li>Baseado no Debian e Ubuntu, fornece cerca de 30.000 pacotes e um dos melhores gerenciadores de software;</li>
+                                        <li>É seguro e confiável; e</li>
+                                        <li>Suporta muitos idiomas, inclusive o português e utiliza o Cinnamon como seu principal ambiente de desktop.</li>
+                                        <li>...</li>
+                                    </ul>   
+                                    <p>
+                                        Graças a uma abordagem conservadora de atualizações de software, um Update Manager exclusivo e a robustez de sua 
+                                        arquitetura, o Linux Mint requer pouca manutenção (sem regressões, antivírus, anti-spyware ... etc). 
+                                        Diferencia-se do Ubuntu e do Debian por incluir drivers e codecs proprietários por <i>default</i> e por alguns recursos que lhe 
+                                        permitem fazer em modo gráfico(<i>GUI</i>), configurações que em outros sistemas são feitas através de linha de comando (<i>CLI</i>). 
+                                        Utiliza por padrão o desktop Cinnamon, um derivado do GNOME, com um menu no painel inferior junto à barra de tarefas (o MintMenu), similar ao menu do KDE, ou ao menu "Iniciar" do Windows.                                            
+                                    </p>
+
+                                    <p>                        
+                                        Visite a página oficial do <a href="https://linuxmint.com">Linux Mint</a> na web, consulte a documentação, baixe o pacote, instale e contribua com o projeto.
+                                    </p>  
+
+                                    <p>
+                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mint" href="#mint" role="button"  >my tips &raquo;</a>
+                                    </p>
+
+                                    <!--
+                                    <a data-toggle="collapse" data-target="#mint" href="#mint">                                           
                                         <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
                                     </a>
-                                </div>
-                                -->
-                                <h2>Linux Mint</h2>
-                                <p>
-                                    O Linux Mint é um sistema operacional moderno, elegante e confortável, poderoso e fácil de usar.
-                                    É uma das distribuições Linux de desktop mais populares do mundo e usada por milhões de pessoas.                                   
-                                </p>
-                                <div class="media border p-3">
-                                    <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rt.orgounded-circle" style="width:60px;">
-                                    <div class="media-body">
-                                        <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
-                                        <p>
-                                            Sua última versão estável, o <strong>Linux Mint 19.2</strong>, codinome "Tina" é uma versão de suporte de longo prazo LTS (<strong><i>Long Term Support</i></strong>), suportada 
-                                            até o ano de 2023. Ele vem com software atualizado, traz aprimoramentos e muitos novos recursos para 
-                                            tornar sua experiência com a área de trabalho mais confortável. Suas principais caracteŕistcas são:
-                                        </p>
-                                        <ul>                                            
-                                            <li>Funciona imediatamente, com suporte completo a multimídia e é extremamente fácil de usar;</li>
-                                            <li>É gratuito e de código aberto;</li>
-                                            <li>É orientado pela comunidade;</li>
-                                            <li>Baseado no Debian e Ubuntu, fornece cerca de 30.000 pacotes e um dos melhores gerenciadores de software;</li>
-                                            <li>É seguro e confiável; e</li>
-                                            <li>Suporta muitos idiomas, inclusive o português e utiliza o Cinnamon como seu principal ambiente de desktop.</li>
-                                            <li>...</li>
-                                        </ul>   
-                                        <p>
-                                            Graças a uma abordagem conservadora de atualizações de software, um Update Manager exclusivo e a robustez de sua 
-                                            arquitetura, o Linux Mint requer pouca manutenção (sem regressões, antivírus, anti-spyware ... etc). 
-                                            Diferencia-se do Ubuntu e do Debian por incluir drivers e codecs proprietários por <i>default</i> e por alguns recursos que lhe 
-                                            permitem fazer em modo gráfico(<i>GUI</i>), configurações que em outros sistemas são feitas através de linha de comando (<i>CLI</i>). 
-                                            Utiliza por padrão o desktop Cinnamon, um derivado do GNOME, com um menu no painel inferior junto à barra de tarefas (o MintMenu), similar ao menu do KDE, ou ao menu "Iniciar" do Windows.                                            
-                                        </p>
-
-                                        <p>                        
-                                            Visite a página oficial do Linux Mint na web, consulte a documentação, baixe o pacote, instale e contribua com o projeto: <a href="http://linuxmint.com">http://linuxmint.com</a>. 
-                                        </p>
-                                        <p>
-                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mint" href="#mint" role="button">my tips &raquo;</a>
-                                        </p>
-                                        <!--
-                                        <a data-toggle="collapse" data-target="#mint" href="#mint">                                           
-                                            <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
-                                        </a>
-                                        -->
-                                        <div id="mint" class="collapse">                                                       
-                                            <p>1. Navegando entre diretórios a partir da raiz: luciolemos@dell:~$ cd /opt/lampp/htdocs</p>
-                                            <p>2. Criando um diretório com permissões de administrador: luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir dicas</p>
-                                            <p>3. Verificando as permissões: luciolemos@dell:/opt/lampp/htdocs$ ls -lt</p>
-                                            <p>4. Dando ao usuário permissão de escrita no servidor lampp: luciolemos@dell:~$ sudo chmod -R 777 /opt/lampp/htdocs</p>
-                                        </div>
+                                    -->
+                                    <div id="mint" class="collapse">                                                       
+                                        <p>1. Navegando entre diretórios a partir da raiz: luciolemos@dell:~$ cd /opt/lampp/htdocs</p>
+                                        <p>2. Criando um diretório com permissões de administrador: luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir dicas</p>
+                                        <p>3. Verificando as permissões: luciolemos@dell:/opt/lampp/htdocs$ ls -lt</p>
+                                        <p>4. Dando ao usuário permissão de escrita no servidor lampp: luciolemos@dell:~$ sudo chmod -R 777 /opt/lampp/htdocs</p>
                                     </div>
-                                </div>
+                                </div>                               
                             </div>
                         </div>                   
                     </div>
@@ -218,71 +253,91 @@
             </section>           
             <!--Término da Seção 1-->  
 
-            <!--Início da Seção 2-->                 
+
+            <!--Início da Seção 2-->  
             <section id="apache_netbeans" class="container-fluid" style="padding-top:0px;padding-bottom:10px">
                 <div class="container">
                     <!-- Example row of columns -->
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="container mt-3">                                
-                                <!--
-                                <div class="">
-                                    <a href="service-page.html">
-                                        <img src="assets/img/netbeans_ide.png" alt="My Tips" style="width:200px;">
+
+                            <!--
+                            <div class="">
+                                <a href="service-page.html">
+                                    <img src="assets/img/linux.png" alt="My Tips" style="width:200px;">
+                                    <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
+                                </a>
+                            </div>
+                            -->
+                            <!--
+                            <h2>Linux Mint</h2>
+                            -->
+                            <img src="assets/img/netbeans_ide.png" alt="linuxmint" class="mr-3 mt-3 rounded-0" style="width:210px; height: 80px">
+                            <p>
+                                O Apache NetBeans IDE é um Ambiente de Desenvolvimento Integrado - uma ferramenta para programadores, 
+                                que permite escrever, compilar, depurar e instalar programas. O IDE é completamente 
+                                escrito em Java, mas pode suportar qualquer linguagem de programação. 
+                                Existe também um grande número de módulos para extender suas funcionalidades.
+                                O Apache Netbeans IDE é um produto livre, sem restrições à sua forma de utilização.                                                                  
+                            </p>
+                            <div class="media border p-3">
+                                <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                                <div class="media-body">
+                                    <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
+                                    <p>O projeto foi criado em junho de 2000 pela Sun Microsystems.
+                                        Sua última versão, o <strong>Apache NetBeans 11.2</strong>, pode ser instalado em todos os sistemas 
+                                        operacionais compatíveis com Java, como Windows, Linux, Mac OSX e BSD. O <strong><i>Write Once, Run Anywhere</i></strong>, também se aplica ao NetBeans. 
+                                        Com seu Editor Java em constante aprimoramento, muitas funcionalidades avançadas e uma extensa linha de ferramentas, 
+                                        modelos e exemplos, o <strong>NetBeans IDE</strong> define o padrão de desenvolvimento com suas tecnologias inovadoras.
+                                        <br>Algumas de suas característcas são: 
+                                    </p>
+                                    <ul>
+                                        <li>É gratuito e de código aberto</li>
+                                        <li>Realça o código-fonte sintática e semânticamente;</li>
+                                        <li>Permite refatorar facilmente seu código;</li>
+                                        <li>Incorpora uma variedade de ferramentas úteis e poderosas;</li>                                            
+                                        <li>O Editor do NetBeans recua linhas, associa palavras e colchetes;</li>
+                                        <li>Fornece modelos de código, dicas de codificação e ferramentas de refatoração;</li>
+                                        <li>Suporta várias linguagens, incluindo Java, C/C++, XML, HTML, PHP, Groovy, Javadoc, JavaScript e JSP;</li>
+                                        <li>Editor extensível, para você poder adicionar suporte para muitas outras linguagens; e</li>                                            
+                                        <li>Integração inovadora com ferramentas de versionamento como o Subversion, o Mercurial e o Git;</li>
+                                        <li>Auto-completar avançado;</li>
+                                        <li>Total suporte ao ANT, ferramenta de automatização da construção de programas;</li>
+                                        <li>Suporte a Databases;</li>
+                                        <li>...</li>
+                                    </ul>  
+                                    <p>
+                                        Apache Netbeans é mantido pela 
+                                        <a href="https://www.apache.org/">Apache Software Foundation</a>                                             
+                                    </p>
+                                    <p>                        
+                                        Visite a página oficial do <a href="http://netbeans.apache.org">Apache Netbeans</a> na web, 
+                                        consulte a documentação, baixe o pacote, instale, faça parte da comunidade de desenvolvedores.
+                                    </p> 
+
+                                    <!--
+                                    <a data-toggle="collapse" data-target="#mint" href="#mint">                                           
                                         <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
                                     </a>
-                                </div>
-                                -->                                                               
-                                <h2>Apache Netbeans</h2>
-                                <p>
-                                    Ambiente de Desenvolvimento Integrado, Plataforma de Ferramentas e Estrutura de Aplicação.
-                                </p>
-                                <div class="media border p-3">
-                                    <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-                                    <div class="media-body">
-                                        <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
-                                        <p>Sua última versão, o <strong>Apache NetBeans 11.2</strong>, pode ser instalado em todos os sistemas 
-                                            operacionais compatíveis com Java, como Windows, Linux, Mac OSX e BSD. O <strong><i>Write Once, Run Anywhere</i></strong>, também se aplica ao NetBeans. 
-                                            Com seu Editor Java em constante aprimoramento, muitas funcionalidades avançadas e uma extensa linha de ferramentas, 
-                                            modelos e exemplos, o NetBeans IDE define o padrão de desenvolvimento com suas tecnologias inovadoras.
-                                            <br>Algumas de suas característcas são: 
-                                        </p>
-                                        <ul>
-                                            <li>É gratuito e de código aberto</li>
-                                            <li>Realça o código-fonte sintática e semânticamente;</li>
-                                            <li>Permite refatorar facilmente seu código;</li>
-                                            <li>Incorpora uma variedade de ferramentas úteis e poderosas;</li>                                            
-                                            <li>O Editor do NetBeans recua linhas, associa palavras e colchetes;</li>
-                                            <li>Fornece modelos de código, dicas de codificação e ferramentas de refatoração;</li>
-                                            <li>Suporta várias linguagens, incluindo Java, C/C++, XML, HTML, PHP, Groovy, Javadoc, JavaScript e JSP;</li>
-                                            <li>Editor extensível, para você poder adicionar suporte para muitas outras linguagens; e</li>                                            
-                                            <li>Integração inovadora com ferramentas de versionamento como o Subversion, o Mercurial e o Git;</li>
-                                            <li>...</li>
-                                        </ul>
+                                    -->
 
-                                        <p>                        
-                                            É mantido pela <a href="https://www.apache.org/">Apache Software Foundation</a> e sua documentação 
-                                            pode ser acessada na página oficial do projeto na web no endereço <a href="http://netbeans.apache.org">http://netbeans.apache.org</a>. 
-                                        </p>
-
-
-                                        <p>
-                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#netbeans" href="#netbeans" role="button">my tips &raquo;</a>
-                                        </p>
-                                        <div id="netbeans" class="collapse">                                                       
-                                            <p>1. Navegando entre diretórios a partir da raiz: luciolemos@dell:~$ cd /opt/lampp/htdocs</p>
-                                            <p>2. Criando um diretório com permissões de administrador: luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir dicas</p>
-                                            <p>3. Verificando as permissões: luciolemos@dell:/opt/lampp/htdocs$ ls -lt</p>
-                                            <p>4. Dando ao usuário permissão de escrita no servidor lampp: luciolemos@dell:~$ sudo chmod -R 777 /opt/lampp/htdocs</p>
-                                        </div>
+                                    <p>
+                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#netbeans" href="#netbeans" role="button">my tips &raquo;</a>
+                                    </p>
+                                    <div id="netbeans" class="collapse">                                                       
+                                        <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ducimus, ipsa temporibus quia at eaque.</p>
+                                        <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ducimus, ipsa temporibus quia at eaque.</p>
+                                        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ducimus, ipsa temporibus quia at eaque.</p>
+                                        <p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ducimus, ipsa temporibus quia at eaque.</p>
                                     </div>
-                                </div>
+
+                                </div>                               
                             </div>
                         </div>                   
                     </div>
                 </div> <!-- /container -->
-            </section>            
-            <!--Término da Seção 2-->      
+            </section>           
+            <!--Término da Seção 2-->  
 
             <!--Início da Seção 3-->
             <section id="my_xampp" class="container-fluid" style="padding-top:0px;padding-bottom:10px">
@@ -298,23 +353,26 @@
                                     </a>
                                 </div> 
                                 -->
+                                <!--
                                 <h2>XAMPP</h2>
+                                -->
+                                <img src="assets/img/xamp.png" alt="linuxmint" class="mr-3 mt-3 rounded-0" style="width:160px; height: 50px">
                                 <p>
-                                    O XAMPP é uma distribuição Apache totalmente gratuita e fácil de instalar, 
-                                    que contém MariaDB, PHP e Perl. 
-                                    O pacote de software livre XAMPP foi configurado para ser incrivelmente fácil de instalar e usar.
-                                    A documentação oficial do XAMPP, atualmente em sua versão 7.3.12, pode ser acessada diretamente na web pelo endereço <a href="https://www.apachefriends.org/index.html">https://www.apachefriends.org/index.html</a>. 
+                                    O XAMPP, acrônimo recursivo para <strong>X</strong> (qualquer SO), <strong>A</strong>pache, <strong>M</strong>ySql e <strong>P</strong>hp, 
+                                    Perl ou Python é uma distribuição Apache totalmente gratuita e de fácil instalação. 
                                 </p>
                                 <div class="media border p-3">
                                     <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
                                     <div class="media-body">
                                         <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
-                                        <p>Muitos desenvolvedores em sua fase inicial de aprendizado sabem por experiência própria que não é fácil instalar um servidor 
-                                            web Apache integrado a MySQL, PHP e Perl. 
-                                            O objetivo do XAMPP é oferecer aos desenvolvedores de todos os níveis, uma maneira rápida e fácil de instalar e rodar se servidor web.
+                                        <p>Nesse conjunto de aplicações, está incluído, respectivamente, um sistema operacional, um servidor web, 
+                                            um sistema de gerenciamento de banco de dados e uma linguagem de programação. O objetivo do XAMPP é 
+                                            oferecer aos desenvolvedores de todos os níveis, uma maneira rápida e fácil de instalar e rodar seu servidor web.<br>
+                                            A documentação oficial do XAMP, atualmente em sua versão 7.3.12, pode ser acessada na w3, em <a href="https://www.apachefriends.org/index.html/">Apache Software Foundation</a>
                                         </p>
+
                                         <p>
-                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#componentes_xampp" href="#componentes_xampp" role="button">my tips &raquo;</a>
+                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#componentes_xampp" href="#componentes_xampp" role="button">Componentes &raquo;</a>
                                         </p>
                                         <div id="componentes_xampp" class="collapse">   
                                             <!--
@@ -326,26 +384,42 @@
                                             <p>6. Para finalizar todos os serviços do XAMPP: luciolemos@dell:~$ sudo /opt/lampp/lampp stop</p>
                                             <p>7. Reinicializando todod os serviços do XAMPP: luciolemos@dell:~$ sudo /opt/lampp/lampp restart</p>
                                             -->
-
                                             <div class="row">
                                                 <div class="col-md-4">                        
                                                     <h2><strong>Apache</strong></h2>
                                                     <p>1. Para iniciar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startapache</p>
                                                     <p>2. Para finalizar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopapache</p>
-                                                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>                        
+                                                    <p>
+                                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#apache_detail" href="#apache_detail" role="button">My Tips &raquo;</a>
+                                                    </p> 
+                                                    <div id="apache_detail" class="collapse">
+                                                        <p>Hello!</p>
+                                                    </div> 
                                                 </div>
 
                                                 <div class="col-md-4">
                                                     <h2><strong>MySql</strong></h2>
                                                     <p>1. Para iniciar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startmysql</p>
                                                     <p>2. Para finalizar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopmysql</p>
-                                                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                                                    <p>
+                                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mysql_detail" href="#mysql_detail" role="button">My Tips &raquo;</a>
+                                                    </p> 
+                                                    <div id="mysql_detail" class="collapse">
+                                                        <p>Hello!</p>
+                                                    </div> 
+
                                                 </div>
 
                                                 <div class="col-md-4"> 
                                                     <h2><strong>FTP Proftp</strong></h2>
                                                     <p>1. Para finalizar apenas o Servidor FTP Proftpd, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startftp</p>
-                                                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                                                    <p>
+                                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#ftppro_detail" href="#ftppro_detail" role="button">My Tips &raquo;</a>
+                                                    </p> 
+                                                    <div id="ftppro_detail" class="collapse">
+                                                        <p>Hello!</p>
+                                                    </div>
+
                                                 </div>
                                             </div>
 
@@ -374,17 +448,35 @@
                                     </a>
                                 </div> 
                                 -->
+                                <!--
                                 <h2>Apache HTTP Server</h2>
+                                -->
+                                <img src="assets/img/apache1_1.png" alt="linuxmint" class="mr-3 mt-3 rounded-0" style="width:160px; height: 80px">
+
                                 <p>
-                                    A documentação oficial do Apache, atualmente em sua versão 2.4.41, pode ser acessada diretamente na web pelo endereço <a href="https://httpd.apache.org">https://httpd.apache.org</a>. 
+                                    O Apache é um servidor web de plataforma aberta e popular. 
+                                    É a principal tecnologia da Apache Software Foundation, responsável por mais de uma dezena de projetos 
+                                    envolvendo tecnologias de transmissão via web, processamento de dados e execução de aplicativos distribuídos. 
                                 </p>
                                 <div class="media border p-3">
                                     <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
                                     <div class="media-body">
                                         <h4>Lúcio Lemos <small><i>Postado em Dezembro 15, 2019</i></small></h4>
                                         <p>
-                                            Conforme anunciado anteriormente, o Apache HTTP Server Project interrompeu todo o desenvolvimento e a revisão de patches da série 2.2.x de lançamentos, que foi descontinuado a partir do lançamento da nova versão em 14 de agosto de 2019.
+                                            Criado em 1995 por Rob McCool, na época funcionário da NCSA (National Center for Supercomputing Applications), 
+                                            o servidor Apache ou Servidor HTTP Apache é o mais bem sucedido servidor web livre que existe. 
+                                            Trata-se de um servidor web muito popular, utilizado principalmente com Sistemas Operacionais Linux.
+
                                         </p>
+
+                                        <p>
+                                            Conforme anunciado anteriormente, o Apache HTTP Server Project interrompeu todo o desenvolvimento e a 
+                                            revisão de patches da série 2.2.x de lançamentos, que foi descontinuado a partir do lançamento da nova 
+                                            versão em 14 de agosto de 2019. A documentação oficial do <a href="https://www.apache.org">Apache HTTP Server</a>, atualmente em sua versão 2.4.41, 
+                                            pode ser acessada diretamente na web pelo endereço. 
+                                        </p>
+
+
                                         <p>
                                             <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mint" href="#mint" role="button">my tips &raquo;</a>
                                         </p>
@@ -417,20 +509,17 @@
                                     </a>
                                 </div>                                                             
                                 -->
-                                <h2>My Sql</h2>
-                                <p>O Servidor de banco de dados</p>
+                                <!-- 
+                                 <h2>My Sql</h2>
+                                -->
+                                <img src="assets/img/mysql6.png" alt="linuxmint" class="mr-3 mt-3 rounded-0" style="width:160px; height: 80px">
+                                <p>O MySQL é um Sistema de Gerenciamento de Banco de Dados (SGBD) relacional de código aberto, que utiliza a <i>Structured Query Language</i> (SQL), como interface. 
+                                    É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation, com mais de 10 milhões de instalações pelo mundo.</p>
                                 <div class="media border p-3">
                                     <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
                                     <div class="media-body">
                                         <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
-                                        <p>O Mint é executado no ambiente de desktop do Cinnamon 4.0 e vem com o linux-firmware 1.173.2 e o kernel do Linux 4.15.0-20. Inclui mudanças que tornam o login no desktop mais fácil e amigável.
-                                            Possui duas versões: uma baseada em Ubuntu (com o qual é totalmente compatível e partilha os mesmos repositórios) e outra baseada em Debian. 
-                                            Suporta muitos idiomas, inclusive o português e utiliza o Cinnamon como seu principal ambiente de desktop.
-                                            Diferencia-se do Ubuntu e do Debian por incluir drivers e codecs proprietários por <i>default</i> e por alguns recursos que permitem fazer em modo gráfico(<i>GUI</i>) 
-                                            configurações que em ambos os sistemas são feitas através de linha de comando (<i>CLI</i>). 
-                                            Utiliza por padrão o desktop Cinnamon, um derivado do GNOME, com um menu no painel inferior junto à barra de tarefas (o MintMenu), similar ao menu do KDE, ou ao menu "Iniciar" do Windows.
-                                            É um sistema operacional moderno, elegante, confortável e fácil de usar. Possui suporte multimídia pronto para o uso, incluindo alguns softwares proprietários e uma ampla gama de aplicativos gratuitos e de código aberto.
-                                        </p>
+
                                         <p>
                                             <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mysql" href="#mysql" role="button">my tips &raquo;</a>
                                         </p>
@@ -456,16 +545,19 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="container mt-3">
-                                <!--
-                                <div class="">
-                                    <a href="service-page.html">
-                                        <img src="assets/img/php3.png" alt="My Tips" style="width:150px;">
-                                    </a>
-                                </div>                                                             
+                                <!--                                
+                                                                <div class="">
+                                                                    <a href="service-page.html">
+                                                                        <img src="assets/img/php3.png" alt="My Tips" style="width:150px;">
+                                                                    </a>
+                                                                </div>                                                             
+                                                                
+                                                                
+                                                                <h2>PHP</h2>
                                 -->
-                                <h2>PHP</h2>
+                                <img src="assets/img/php4.png" alt="linuxmint" class="mr-3 mt-3 rounded-0" style="width:210px; height: 80px">
                                 <p>O PHP, acrônimo recursivo para "Hypertext Preprocessor" é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML. <br>
-                                    A documentação oficial do Php, pode ser acessada diretamente na web pelo endereço <a href="https://www.php.net/manual/pt_BR/introduction.php">https://www.php.net</a>.</p>
+
                                 <div class="media border p-3">
                                     <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
                                     <div class="media-body">
@@ -482,8 +574,11 @@
                                             O PHP pode ser utilizado na maioria dos sistemas operacionais, incluindo Linux, 
                                             várias variantes do Unix (como HP-UX, Solaris e OpenBSD), Microsoft Windows, 
                                             Mac OS X, RISC OS e provavelmente outros. O PHP também tem suporte à maioria 
-                                            dos servidores web atualmente e isso inclui o Apache</p>
-                                        <p>
+                                            dos servidores web atualmente e isso inclui o Apache
+                                        </p>
+
+
+                                        <p>                    
                                             <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mint" href="#mint" role="button">my tips &raquo;</a>
                                         </p>
                                         <div id="mint" class="collapse">                                                       
@@ -516,52 +611,41 @@
                                 </div>                                                             
                                 -->
                                 <h2>Links</h2>
-                                <p>Nesta seção está disponível uma lista de links das  <a href="https://www.php.net/manual/pt_BR/introduction.php">https://www.php.net</a>.</p>
+                                <p>Nesta seção está disponível uma lista de links.
                                 <div class="media border p-3">
                                     <img src="assets/img/lemos.jpeg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
                                     <div class="media-body">
                                         <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
                                         <p>
-                                            O que distingue o PHP de algo como o JavaScript no lado do cliente é que o 
-                                            código é executado no servidor, gerando o HTML que é então enviado para o 
-                                            navegador. O navegador recebe os resultados da execução desse script, mas 
-                                            não sabe qual era o código fonte. Você pode inclusive configurar seu servidor
-                                            web para processar todos os seus arquivos HTML com o PHP, e então não há como
-                                            os usuários dizerem o que você tem na sua manga.
+                                            Segue abaixo uma relação de links que apontam para páginas que você não pode deixar de visitar.
                                         </p>
+
                                         <p>
-                                            O PHP pode ser utilizado na maioria dos sistemas operacionais, incluindo Linux, 
-                                            várias variantes do Unix (como HP-UX, Solaris e OpenBSD), Microsoft Windows, 
-                                            Mac OS X, RISC OS e provavelmente outros. O PHP também tem suporte à maioria 
-                                            dos servidores web atualmente e isso inclui o Apache</p>
-                                        <p>
-                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#links" href="#links" role="button">my tips &raquo;</a>
+                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#links" href="#links" role="button">Links úteis &raquo;</a>
                                         </p>
+
                                         <div id="links" class="collapse">                                                       
-
-
                                             <div class="row">
-                                                <div class="col-md-4">                        
-                                                    <h2><strong>Apache</strong></h2>
-                                                    <p>1. Para iniciar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startapache</p>
-                                                    <p>2. Para finalizar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopapache</p>
-                                                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>                        
-                                                </div>
+                                                <div class="container col-md-12">                                                  
+                                                    <!--<h2><strong>Links</strong></h2>-->                                                                                                                
+                                                    <!-- 
+                                                     <ul class="list-group">
+                                                         <li><a href="https://linuxmint.com" title="Caminho para a página do Mint na w3.">wwwllinuxmin.com.</a></li>
+                                                         <li><a href="http://netbeans.apache.org" title="Navegue na página oficial do Apache Netbeans IDE.">http://netbeans.apache.org</a></li>
+                                                         <li><a href="https://www.apache.org" title="Caminho para a página do Servidor Apache.">https://www.apache.org</a></li>
+                                                         <li><a href="https://www.apachefriends.org/index.html">https://www.apachefriends.org/index.html</a></li>
+                                                         <li><a href="https://www.php.net/manual/pt_BR/introduction.php">https://www.php.net</a></li>
+                                                         <li><a href="https://github.com/luciolemos" title="Caminho para Lúcio Lemos no Servidor Git.">https://github.com/luciolemos</a></li>
+                                                         <li><a href="https://fontawesome.com/kits/50e1549ef6/use?welcome=yes">https://fontawesome.com/kits/50e1549ef6/use?welcome=yes</a></li>
+                                                         <li><a href="https://www.w3schools.com/html/default.asp" title="Caminho para a página do Mint na w3.">https://www.w3schools.com/html/default.asp</a></li>
+                                                         <li><a href="https://getcomposer.org" title="Caminho para a página do Composer.">https://getcomposer.org</a></li>
+                                                         <li><a href="https://www.bravulink.com.br" title="Caminho para a página do Servidor Bravulink.">https://www.bravulink.com.br</a></li>
+                                                         <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" title="Caminho para a página do Bootstrap3 e 4.">https://www.w3schools.com/bootstrap/bootstrap_ver.asp</a></li>
+                                                     </ul>
+                                                    -->
+                                                </div>                                                                                              
 
-                                                <div class="col-md-4">
-                                                    <h2><strong>MySql</strong></h2>
-                                                    <p>1. Para iniciar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startmysql</p>
-                                                    <p>2. Para finalizar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopmysql</p>
-                                                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                                                </div>
-
-                                                <div class="col-md-4"> 
-                                                    <h2><strong>FTP Proftp</strong></h2>
-                                                    <p>1. Para finalizar apenas o Servidor FTP Proftpd, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startftp</p>
-                                                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                                                </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -612,27 +696,8 @@
             <section id="acomponentes" class="container-fluid" style="padding-top:5px;padding-bottom:10px">
                 <div class="container">
                     <!-- Example row of columns -->
-                    <div class="row">
-                        <div class="col-md-4">                        
-                            <h2><strong>Apache</strong></h2>
-                            <p>1. Para iniciar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startapache</p>
-                            <p>2. Para finalizar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopapache</p>
-                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>                        
-                        </div>
 
-                        <div class="col-md-4">
-                            <h2><strong>MySql</strong></h2>
-                            <p>1. Para iniciar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startmysql</p>
-                            <p>2. Para finalizar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopmysql</p>
-                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                        </div>
-
-                        <div class="col-md-4"> 
-                            <h2><strong>FTP Proftp</strong></h2>
-                            <p>1. Para finalizar apenas o Servidor FTP Proftpd, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startftp</p>
-                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                        </div>
-                    </div>
+                </div>
                 </div> <!-- /container -->
             </section>
             <hr>
@@ -782,7 +847,6 @@
                                 <li><a href="#">Terms of Use</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
