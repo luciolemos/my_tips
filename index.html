@@ -4,6 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="author" content="Lúcio Lemos">
+        <meta name="description" content="Full Stack Developer Home Page">
+        <meta name="keywords" content="Linux Mint, Apache Netbeans, GitHub, Emmet, Apache Server, HTML, CSS, XML, JavaScript">
         <title>My_Tips</title>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
@@ -12,21 +15,17 @@
         <link rel="stylesheet" href="assets/css/smoothproducts.css">
 
 
-        <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
-        <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-        <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-
-        <script src="https://kit.fontawesome.com/50e1549ef6.js" crossorigin="anonymous"></script>
 
         <style>
             .jumbotron {
                 /* background-color: #f4511e;*/
                 /*color: #ffffff;*/
-                padding:10px 15px;
+                padding:30px 15px;
             }
-            #botao {
-                margin-left: 100px;
+            .alert{
+                background-color: #383d41;
             }
+
 
 
         </style>
@@ -82,14 +81,22 @@
             <div class="container">
 
 
+
                 <a class="navbar-brand" href="#">Início</a>
+
+
+
                 <!--
-                <a class="navbar-brand " href="#">
-                    <img src="assets/img/Sem título.png" alt="My Tips" style="width:100px;">
-                </a>
+                <div class="media">
+                    <a class="navbar-brand " href="#" title="Topo da página">
+                        <img src="assets/img/mytips3.png" alt="My Tips" style="width:70px;">
+                    </a>
+                </div>
                 -->
 
-                <button 
+
+                <button
+                    title="Menu Principal"
                     class="navbar-toggler" 
                     data-toggle="collapse" 
                     type="button" 
@@ -158,9 +165,12 @@
                     <!--
                     <h1 class="display-3">My Tips</h1>
                     -->
-                    <a class="navbar-brand " id="img_logo" href="#">                                                  
-                        <img src="assets/img/mytips1.png" alt="My Tips" style="width:200px;">      
-                    </a>
+
+                    <div class="media media-body">
+                        <a>
+                            <img src="assets/img/mytips3.png" alt="My Tips" style="width:200px;">
+                        </a>
+                    </div>
 
                     <!--
                     <p>
@@ -168,30 +178,46 @@
                     </p>
                     -->
 
+
+                    <p>                                                    
+                        Ambiente gráfico é o nome dado à <i>interface</i> projetada com o objetivo de facilitar e tornar prática a utilização do 
+                        computador por meio de representações visuais do sistema operacional como elementos gráficos, ícones e outros 
+                        indicadores visuais.<br>
+                        <i>Interface</i> é por definição, o conjunto de recursos que permitem a um sistema adaptar-se a outro, seja ele 
+                        físico ou virtual.
+                    </p>
+
                     <div>
                         <p>
-                            <button id="botao" class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#jumbo" type="button">Saiba mais &raquo;</button>
+                            <button class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#jumbo" type="button">Experimente &raquo;</button>
                         </p>
                     </div>
-                    <div id="jumbo" class="collapse">                                                        
-                        <!-- 
-                         <p>
-                             Ambiente gráfico é um software feito para facilitar e tornar prática a utilização do 
-                             computador por meio de representações visuais do sistema operacional.
-                             que permite a interação com dispositivos digitais por meio de elementos gráficos como ícones e outros indicadores visuais, 
-                             <i>Interface</i> é por definição, o conjunto de recursos que permitem a um sistema adaptar-se a outro, seja ele físico ou virtual. 
-                             Ambiente gráfico é o nome dado à interface projetada para facilitar a utilização do computador por meio de representações visuais do sistema operacional.
-                             No mundo dos desenvolvedores e do ponto de vista do usuário de TI, existem dois tipos de interfaces:  GUI: Graphic User Interface. É composta por todos os recursos gráficos utilizados pelo usuário para que o mesmo consiga exercer suas tarefas facilmente, sem a necessidade de conhecimento profundo de comandos. O cursor e os ícones são alguns dos elementos da GUI.
-                             - CLI: Command Line Interface. É a parte "complicada" de um sistema operacional. Seja qual for ele, a CLI está presente e seu uso é destinado aos experts que necessitem fazer ações não disponíveis via GUI. Não sendo nada intuitiva, necessita de alto conhecimento de comandos. O terminal Linux e o CMD do Windows são exemplos de emuladores de CLI.
-                             GUI (<i>Graphic User Interface</i>) e CLI (<i>Command Line Interface</i>).                       
-                         </p>
-                        -->
-                        <p>                                                    
-                            My tips é uma compilação de comandos executados em modo CLI no 
-                            <a href="service-page.html">Linux Mint 19.1</a> a partir do terminal do 
-                            <a href="netbeans-page.html">Apache Netbeans IDE 11.2</a>
+                    <div id="jumbo" class="collapse">                                                     
+
+
+                        <p>
+                            Do ponto de vista do usuário de TI, existem dois tipos de interfaces: <strong>GUI</strong> 
+                            (<i>Graphic User Interface</i>) e <strong>CLI</strong> (<i>Command Line Interface</i>).
                         </p>
-                    </div>                    
+                        <p>
+                            A <strong>GUI</strong> é composta por todos os recursos gráficos utilizados pelo usuário para que o mesmo consiga 
+                            executar suas tarefas facilmente, sem a necessidade de conhecimento profundo de comandos. O cursor piscando 
+                            intermitentemente em nossa tela, os ícones em nosso desktop dos aplicativos nativos ou instalados em nosso sistema, 
+                            botões de acão, links e o próprio assistente de instalação de programas são alguns exemplos de elementos da Interface 
+                            Gráfica do Usuário.
+                        </p>
+
+                        <p>
+                            A <strong>CLI</strong> por sua vez é destinada aos usuários avançados do sistema e que necessitam executar tarefas não 
+                            acessíveis, ou não disponíveis no modo <strong>GUI</strong>. O emulador de terminal para o Ambiente de Trabalho MATE no Linux Mint e o CMD
+                            do Windows são exemplos de interfaces que utilizam linha de comando.                                                 
+                        </p>
+
+                        <p><i>My tips</i> é uma compilação de comandos executados em modo <strong>CLI</strong> no 
+                            <a href="service-page.html">Linux Mint 19.1</a> a partir do terminal do 
+                            <a href="netbeans-page.html">Apache Netbeans IDE 11.2</a><br></p>
+                    </div>
+
                 </div>
             </div>
             <!--Término do jumbotron-->            
@@ -295,25 +321,25 @@
                                         <h2>Linux Mint - <i>Tips</i> de comandos no terminal</h2>
                                         <ol class="generic-list">
                                             <li class="item">Navegando até o diretório <i>htdocs</i> a partir da raiz:
-                                                <div class="alert alert-dark" role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:~$ cd /opt/lampp/<strong>htdocs</strong></code>
                                                 </div>
                                             </li>
 
                                             <li class="item">Criando o diretório <i>dicas</i> dentro de <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir <strong>dicas</strong></code>
                                                 </div>
                                             </li>
 
                                             <li class="item">Verificando as permissões para o diretório <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:/opt/lampp/htdocs$ <strong>ls -lt</strong></code>
                                                 </div> 
                                             </li>
 
                                             <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:~$ sudo <strong>chmod -R 777 /opt/lampp/htdocs</strong></code>
                                                 </div>
                                             </li>
@@ -347,7 +373,7 @@
                             <h2>Linux Mint</h2>
                             -->
                             <div class="media">
-                                <img src="assets/img/netbeans1.png" alt="Apache Netbeans" class="mr-3 mt-3 rounded-0" style="width:auto; height: auto">
+                                <img src="assets/img/netbeans.png" alt="Apache Netbeans" class="mr-3 mt-3 rounded-0" style="width:auto; height: auto">
                             </div>
                             <p>
                                 O Apache NetBeans IDE é um Ambiente de Desenvolvimento Integrado - uma ferramenta para programadores, 
@@ -666,7 +692,7 @@
                                         <li>&#8230;</li>
                                     </ul>  
 
-                                    <p>A documentação oficial do Emmet pode ser acessada na w3, <a href="https://emmet.io/">&#128073; por aqui</a>.</p>
+                                    <p>A documentação oficial do Emmet pode ser acessada na w3, <a href="https://emmet.io/" title="https://emmet.io">&#128073; por aqui</a>.</p>
 
                                     <p>
                                         <a 
@@ -697,30 +723,31 @@
                                     <div class="collapse" id="my_emmet" style="margin-top: 25px">
                                         <h2>Emmet - The essential toolkit for web-developers</h2>
                                         <ol class="generic-list">
-                                            <li class="item">Navegando até o diretório <i>htdocs</i> do Linux Mint, a partir da raiz:
-                                                <div class="alert alert-dark" role="alert">
+                                            <li class="item">Usando a sintaxe do emmet observe o que essa linha de comando vai gerar: <code>ul.generic-list>lorem10.item*4</code>
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:~$ cd /opt/lampp/<strong>htdocs</strong></code>
                                                 </div>
                                             </li>
 
                                             <li class="item">Criando o diretório <i>dicas</i> dentro de <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir <strong>dicas</strong></code>
                                                 </div>
                                             </li>
 
                                             <li class="item">Verificando as permissões para o diretório <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:/opt/lampp/htdocs$ <strong>ls -lt</strong></code>
                                                 </div> 
                                             </li>
 
                                             <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
+                                                <div class="alert" role="alert">
                                                     <code>luciolemos@dell:~$ sudo <strong>chmod -R 777 /opt/lampp/htdocs</strong></code>
                                                 </div>
                                             </li>
-                                            
+
+
                                             <!--Exxemplo de vários list ítens na tag "code"
                                             <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
                                                 <div class="alert alert-dark " role="alert">
@@ -734,13 +761,7 @@
                                                 </div>
                                             </li>
                                             -->
-
-
-
-
-
-
-                                        </ol>
+                                        </ol>                                        
                                     </div><!--collapse-->
                                 </div><!--media-body-->
                             </div><!--media border p-3-->                                                   
@@ -751,6 +772,162 @@
             <hr>
 
             <!--Início da Seção 5-->
+            <section id="xampp" class="container-fluid" style="padding-top:0px;padding-bottom:10px">
+                <div class="container">
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--
+                            <div class="">
+                                <a href="service-page.html">
+                                    <img src="assets/img/linux.png" alt="My Tips" style="width:200px;">
+                                    <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
+                                </a>
+                            </div>
+                            -->
+
+                            <!--
+                            <h2>Linux Mint</h2>
+                            -->
+                            <div class="media">
+                                <img src="assets/img/xamp.png" alt="XAMPP" class="mr-3 mt-3 rounded-0" style="width:auto; height: auto">
+                            </div>
+                            <p>
+                                O XAMPP, acrônimo recursivo para <strong>X</strong> (qualquer SO), <strong>A</strong>pache, <strong>M</strong>ySql e <strong>P</strong>hp, 
+                                Perl ou Python é uma distribuição Apache totalmente gratuita e de fácil instalação. 
+                            </p>
+
+                            <div class="media border p-3">
+                                <!--
+                                <img src="assets/img/lemos.jpeg" 
+                                     alt="Lúcio Flávio Lemos, Full Stack Developer" 
+                                     class="mr-3 mt-3 rounded-circle" 
+                                     style="width:60px;">
+                                -->
+                                <div class="media-body">
+                                    <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
+                                    <p>Nesse conjunto de aplicações, está incluído, respectivamente, um sistema operacional, um servidor web, 
+                                        um sistema de gerenciamento de banco de dados e uma linguagem de programação. O objetivo do XAMPP é 
+                                        oferecer aos desenvolvedores de todos os níveis, uma maneira rápida e fácil de instalar e rodar seu servidor web.                                            
+                                    </p>
+
+                                    <p>
+                                        A documentação oficial do XAMP, atualmente em sua versão 7.3.12, pode ser acessada na w3, em 
+                                        <a href="https://www.apachefriends.org/index.html/">Apache Software Foundation</a>
+                                    </p>
+
+                                    <!--
+                                    <p>1. Baixando dos repositórios os pacotes:<br>luciolemos@dell:~$ wget "https://ufpr.dl.sourceforge.net/project/xampp/XAMPP%20Linux/7.3.10/xampp-linux-x64-7.3.10-0-installer.run" -O xampp-installer.run<p>
+                                    <p>2. Dando permissão de escria no doretório: luciolemos@dell:~$ chmod +x xampp-installer.run<p>
+                                    <p>3. Iniciando o instalador: luciolemos@dell:~$ sudo ./xampp-installer.run</p>
+                                    <p>4. Iniciando o gerenciador do XAMPP no modo gráfico: luciolemos@dell:~$ sudo /opt/lampp/manager-linux-x64.run</p>
+                                    <p>5. Para iniciar todos os serviços do XAMPP, use o seguinte comando no terminal: luciolemos@dell:~$ sudo /opt/lampp/lampp start</p>
+                                    <p>6. Para finalizar todos os serviços do XAMPP: luciolemos@dell:~$ sudo /opt/lampp/lampp stop</p>
+                                    <p>7. Reinicializando todod os serviços do XAMPP: luciolemos@dell:~$ sudo /opt/lampp/lampp restart</p>
+                                    -->                                     
+
+                                    <p>
+                                        <a 
+                                            class="btn btn-primary btn-sm" 
+                                            data-toggle="collapse" 
+                                            data-target="#my_xampp" 
+                                            href="#my_xampp" 
+                                            role="button">My tips &raquo;
+                                        </a>
+                                    </p>
+                                    <!--
+                                    <a data-toggle="collapse" data-target="#mint" href="#mint">                                           
+                                        <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
+                                    </a>
+                                    -->
+
+                                    <!-- Modelo de classe card-->
+                                    <!--
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special title treatment</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <div class="collapse" id="my_xampp" style="margin-top: 25px">
+                                        <h2>XAMPP - <i>Tips</i> de comandos no terminal</h2>
+                                        <ol class="generic-list">
+                                            <li class="item">Navegando até o diretório <i>htdocs</i> a partir da raiz:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ cd /opt/lampp/<strong>htdocs</strong></code>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">Criando o diretório <i>dicas</i> dentro de <i>htdocs</i>:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir <strong>dicas</strong></code>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">Verificando as permissões para o diretório <i>htdocs</i>:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:/opt/lampp/htdocs$ <strong>ls -lt</strong></code>
+                                                </div> 
+                                            </li>
+
+                                            <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ sudo <strong>chmod -R 777 /opt/lampp/htdocs</strong></code>
+                                                </div>
+                                            </li>
+                                        </ol>
+
+                                        <div class="row">
+                                            <div class="col-md-4">                        
+                                                <h2>Apache</h2>
+                                                <p>1. Para iniciar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startapache</p>
+                                                <p>2. Para finalizar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopapache</p>
+                                                <p>
+                                                    <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#apache_detail" href="#apache_detail" role="button">My Tips &raquo;</a>
+                                                </p> 
+                                                <div id="apache_detail" class="collapse">
+                                                    <p>Hello!</p>
+                                                </div> 
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <h2>MySql</h2>
+                                                <p>1. Para iniciar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startmysql</p>
+                                                <p>2. Para finalizar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopmysql</p>
+                                                <p>
+                                                    <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mysql_detail" href="#mysql_detail" role="button">My Tips &raquo;</a>
+                                                </p> 
+                                                <div id="mysql_detail" class="collapse">
+                                                    <p>Hello!</p>
+                                                </div> 
+
+                                            </div>
+
+                                            <div class="col-md-4"> 
+                                                <h2>FTP Proftp</h2>
+                                                <p>1. Para finalizar apenas o Servidor FTP Proftpd, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startftp</p>
+                                                <p>
+                                                    <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#ftppro_detail" href="#ftppro_detail" role="button">My Tips &raquo;</a>
+                                                </p> 
+                                                <div id="ftppro_detail" class="collapse">
+                                                    <p>Hello!</p>
+                                                </div>
+
+                                            </div>
+                                        </div>                                       
+                                    </div><!--collapse-->
+                                </div><!--media-body-->
+                            </div><!--media border p-3-->
+                        </div><!--col-md-12-->                   
+                    </div><!--row-->
+                </div><!--container-->
+            </section><!--Término da Seção 5-->
+            <hr>
+
+
+            <!--Início da Seção 6-->
             <section id="apache" class="container-fluid" style="padding-top:0px;padding-bottom:10px">            
                 <div class="container">
                     <!-- Example row of columns -->
@@ -814,7 +991,7 @@
                                         O Apache é mantido pela <a href="https://www.apache.org/" title="https://www.apache.org">Apache Software Foundation</a>                                             
                                     </p>
                                     <p>                        
-                                        Visite a página oficial do <a href="https://www.apache.org" title="https://www.apache.org">Apache</a> na web, 
+                                        Visite a página oficial do <a href="https://httpd.apache.org" title="https://httpd.apache.org">Apache HTTP Server Project</a> na web, 
                                         consulte a documentação, baixe o pacote, instale e contribua com o projeto.
                                     </p>
 
@@ -877,10 +1054,11 @@
                         </div><!--col-md-12-->                   
                     </div><!--row-->
                 </div><!--container-->
-            </section><!--Término da Seção 5-->
+            </section><!--Término da Seção 6-->
             <hr>
 
         </main>
+
 
         <div>
             <footer class="page-footer dark">
@@ -934,6 +1112,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
         <script src="assets/js/smoothproducts.min.js"></script>
         <script src="assets/js/theme.js"></script>
+        <script src="https://kit.fontawesome.com/50e1549ef6.js" crossorigin="anonymous"></script>
     </body>
 
 </html>
