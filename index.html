@@ -8,11 +8,18 @@
         <meta name="description" content="Full Stack Developer Home Page">
         <meta name="keywords" content="Linux Mint, Apache Netbeans, GitHub, Emmet, Apache Server, HTML, CSS, XML, JavaScript">
         <title>My_Tips</title>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
         <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
         <link rel="stylesheet" href="assets/css/smoothproducts.css">
+
+        <!--Rodapé-->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
 
 
 
@@ -20,13 +27,27 @@
             .jumbotron {
                 /* background-color: #f4511e;*/
                 /*color: #ffffff;*/
-                padding:30px 15px;
+                padding:100px 30px 20px 30px;
             }
             .alert{
                 background-color: #383d41;
             }
 
+            .btn-primary {
+                background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
+                background: #245580;
+                background-repeat: repeat-x;
+                border-color: #245580;
+                text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+                box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+            }
 
+            .btn-sm {
+                /*padding: 10px 16px;*/
+                /*font-size: 18px;*/
+                /*line-height: 1.33;*/
+                /*border-radius: 6px;*/
+            }           
 
         </style>
 
@@ -77,15 +98,10 @@
         </nav>
         -->
 
-        <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <!--<nav class="navbar navbar-light navbar-expand-md fixed-top bg-dark clean-navbar">-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container">
-
-
-
                 <a class="navbar-brand" href="#">Início</a>
-
-
-
                 <!--
                 <div class="media">
                     <a class="navbar-brand " href="#" title="Topo da página">
@@ -93,14 +109,7 @@
                     </a>
                 </div>
                 -->
-
-
-                <button
-                    title="Menu Principal"
-                    class="navbar-toggler" 
-                    data-toggle="collapse" 
-                    type="button" 
-                    data-target="#navcol-1">
+                <button title="Menu Principal" class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navcol-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="navbar-toggler-icon"></span>                
                 </button>
@@ -189,7 +198,12 @@
 
                     <div>
                         <p>
-                            <button class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#jumbo" type="button">Experimente &raquo;</button>
+                            <button 
+                                class="btn btn-primary btn-sm" 
+                                data-toggle="collapse" 
+                                data-target="#jumbo" 
+                                type="button">Experimente &raquo;
+                            </button>
                         </p>
                     </div>
                     <div id="jumbo" class="collapse">                                                     
@@ -197,20 +211,20 @@
 
                         <p>
                             Do ponto de vista do usuário de TI, existem dois tipos de interfaces: <strong>GUI</strong> 
-                            (<i>Graphic User Interface</i>) e <strong>CLI</strong> (<i>Command Line Interface</i>).
+                            &#40;<i>Graphic User Interface</i>&#41; e <strong>CLI</strong> &#40;<i>Command Line Interface</i>&#41;&#8228;
                         </p>
                         <p>
                             A <strong>GUI</strong> é composta por todos os recursos gráficos utilizados pelo usuário para que o mesmo consiga 
                             executar suas tarefas facilmente, sem a necessidade de conhecimento profundo de comandos. O cursor piscando 
                             intermitentemente em nossa tela, os ícones em nosso desktop dos aplicativos nativos ou instalados em nosso sistema, 
                             botões de acão, links e o próprio assistente de instalação de programas são alguns exemplos de elementos da Interface 
-                            Gráfica do Usuário.
+                            Gráfica do Usuário&#8228;
                         </p>
 
                         <p>
                             A <strong>CLI</strong> por sua vez é destinada aos usuários avançados do sistema e que necessitam executar tarefas não 
                             acessíveis, ou não disponíveis no modo <strong>GUI</strong>. O emulador de terminal para o Ambiente de Trabalho MATE no Linux Mint e o CMD
-                            do Windows são exemplos de interfaces que utilizam linha de comando.                                                 
+                            do Windows são exemplos de interfaces que utilizam linha de comando&#8228;                                                 
                         </p>
 
                         <p><i>My tips</i> é uma compilação de comandos executados em modo <strong>CLI</strong> no 
@@ -266,7 +280,7 @@
                                     <p>
                                         Graças a uma abordagem conservadora de atualizações de software, um Update Manager exclusivo 
                                         e a robustez de sua arquitetura, o Linux Mint requer pouca manutenção (sem regressões, antivírus, 
-                                        anti-spyware ... etc)&#8228;                                                                            
+                                        anti-spyware, etc &#8230;)&#8228;                                                                            
                                     </p>
 
                                     <p>                                        
@@ -320,27 +334,45 @@
                                     <div class="collapse" id="my_mint" style="margin-top: 25px">
                                         <h2>Linux Mint - <i>Tips</i> de comandos no terminal</h2>
                                         <ol class="generic-list">
+
+                                            <li class="item">Verificando a versão do java instalada:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$</code> <kbd>java -version</kbd><br>
+                                                    <code>openjdk version "11.0.4" 2019-07-16</code><br>
+                                                    <code>OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3)</code>
+                                                    <code>OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mode, sharing)</code>
+                                                    <code>luciolemos@dell:~$</code>
+                                                </div>
+                                            </li>
+                                            <li class="item">Verificando a versão do Mint instalada:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$</code> <kbd>lsb_release -rs</kbd><br>
+                                                    <code>19.1</code><br>
+                                                    <code>luciolemos@dell:~$</code>
+                                                </div>
+                                            </li>
+
                                             <li class="item">Navegando até o diretório <i>htdocs</i> a partir da raiz:
                                                 <div class="alert" role="alert">
-                                                    <code>luciolemos@dell:~$ cd /opt/lampp/<strong>htdocs</strong></code>
+                                                    <code>luciolemos@dell:~$</code> <kbd>cd /opt/lampp/htdocs</kbd>
                                                 </div>
                                             </li>
 
                                             <li class="item">Criando o diretório <i>dicas</i> dentro de <i>htdocs</i>:
                                                 <div class="alert" role="alert">
-                                                    <code>luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir <strong>dicas</strong></code>
+                                                    <code>luciolemos@dell:/opt/lampp/htdocs$</code> <kbd>sudo mkdir dicas</kbd>
                                                 </div>
                                             </li>
 
                                             <li class="item">Verificando as permissões para o diretório <i>htdocs</i>:
                                                 <div class="alert" role="alert">
-                                                    <code>luciolemos@dell:/opt/lampp/htdocs$ <strong>ls -lt</strong></code>
+                                                    <code>luciolemos@dell:/opt/lampp/htdocs$</code> <kbd>ls -lt</kbd>
                                                 </div> 
                                             </li>
 
                                             <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
                                                 <div class="alert" role="alert">
-                                                    <code>luciolemos@dell:~$ sudo <strong>chmod -R 777 /opt/lampp/htdocs</strong></code>
+                                                    <code>luciolemos@dell:~$</code> <kbd>sudo chmod -R 777 /opt/lampp/htdocs</kbd>
                                                 </div>
                                             </li>
                                         </ol>
@@ -551,6 +583,7 @@
                                         A compra foi encerrada em 26 de outubro de 2018.
                                     </p>
 
+                                    <!--
                                     <ul>                                            
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
@@ -559,7 +592,8 @@
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
                                         <li>&#8230;</li>
-                                    </ul>   
+                                    </ul>
+                                    -->
 
                                     <p>                        
                                         Visite a página de repositórios de <a href="https://github.com/luciolemos" title="https://github.com/luciolemos">luciolemos</a> no GituHub.
@@ -692,7 +726,7 @@
                                         <li>&#8230;</li>
                                     </ul>  
 
-                                    <p>A documentação oficial do Emmet pode ser acessada na w3, <a href="https://emmet.io/" title="https://emmet.io">&#128073; por aqui</a>.</p>
+                                    <p>A documentação oficial do Emmet pode ser acessada na w3, <a href="https://docs.emmet.io/cheat-sheet" title="https://docs.emmet.io/cheat-sheet/">&#128073; por aqui</a>.</p>
 
                                     <p>
                                         <a 
@@ -722,6 +756,7 @@
                                     -->
                                     <div class="collapse" id="my_emmet" style="margin-top: 25px">
                                         <h2>Emmet - The essential toolkit for web-developers</h2>
+
                                         <ol class="generic-list">
                                             <li class="item">Usando a sintaxe do emmet observe o que essa linha de comando vai gerar: <code>ul.generic-list>lorem10.item*4</code>
                                                 <div class="alert" role="alert">
@@ -748,7 +783,7 @@
                                             </li>
 
 
-                                            <!--Exxemplo de vários list ítens na tag "code"
+                                            <!--Exemplo de vários list ítens na tag "code"
                                             <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
                                                 <div class="alert alert-dark " role="alert">
                                                     <ul class="generic-list" style="list-style-type:none;">
@@ -793,7 +828,7 @@
                                 <img src="assets/img/xamp.png" alt="XAMPP" class="mr-3 mt-3 rounded-0" style="width:auto; height: auto">
                             </div>
                             <p>
-                                O XAMPP, acrônimo recursivo para <strong>X</strong> (qualquer SO), <strong>A</strong>pache, <strong>M</strong>ySql e <strong>P</strong>hp, 
+                                O XAMPP, acrônimo recursivo para <strong>X</strong> (qualquer SO), <strong>A</strong>pache, <strong>M</strong>aria DB e <strong>P</strong>hp, 
                                 Perl ou Python é uma distribuição Apache totalmente gratuita e de fácil instalação. 
                             </p>
 
@@ -853,6 +888,7 @@
                                     -->
                                     <div class="collapse" id="my_xampp" style="margin-top: 25px">
                                         <h2>XAMPP - <i>Tips</i> de comandos no terminal</h2>
+                                        <!--
                                         <ol class="generic-list">
                                             <li class="item">Navegando até o diretório <i>htdocs</i> a partir da raiz:
                                                 <div class="alert" role="alert">
@@ -878,41 +914,108 @@
                                                 </div>
                                             </li>
                                         </ol>
+                                        -->
 
-                                        <div class="row">
+                                        <div class="row" style="margin-top: 50px">
                                             <div class="col-md-4">                        
                                                 <h2>Apache</h2>
-                                                <p>1. Para iniciar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startapache</p>
-                                                <p>2. Para finalizar apenas o Servidor Apache, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopapache</p>
+                                                <p>O Servidor Apache vem imbutido no XAMPP.</p>
+
                                                 <p>
-                                                    <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#apache_detail" href="#apache_detail" role="button">My Tips &raquo;</a>
-                                                </p> 
+                                                    <a 
+                                                        class="btn btn-primary btn-sm" 
+                                                        data-toggle="collapse" 
+                                                        data-target="#apache_detail" 
+                                                        href="#apache_detail" 
+                                                        role="button">Apache tips &raquo;
+                                                    </a>
+                                                </p>
+
                                                 <div id="apache_detail" class="collapse">
-                                                    <p>Hello!</p>
+                                                    <ol class="generic-list">
+                                                        <li class="item">Verificando o status do Servidor Apache do XAMPP:
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp status apache</code>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="item">Iniciando o Servidor Apache do XAMPP:
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp start apache</code>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="item">Parando o Servidor Apache do XAMPP:
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp stop apache</code>
+                                                            </div>
+                                                        </li>                                                        
+                                                    </ol>
+
                                                 </div> 
                                             </div>
 
                                             <div class="col-md-4">
-                                                <h2>MySql</h2>
-                                                <p>1. Para iniciar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startmysql</p>
-                                                <p>2. Para finalizar apenas o Servidor Banco de Dados, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp stopmysql</p>
+                                                <h2>Maria DB</h2>                                                
+                                                <p>O Servidor de Banco de Dados Maria DB também faz parte do XAMPP.</p>
                                                 <p>
-                                                    <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#mysql_detail" href="#mysql_detail" role="button">My Tips &raquo;</a>
-                                                </p> 
-                                                <div id="mysql_detail" class="collapse">
-                                                    <p>Hello!</p>
+                                                    <a 
+                                                        class="btn btn-primary btn-sm" 
+                                                        data-toggle="collapse" 
+                                                        data-target="#mariadb_detail" 
+                                                        href="#mariadb_detail" 
+                                                        role="button">Maria DB tips&raquo;
+                                                    </a>
+                                                </p>
+
+                                                <div id="mariadb_detail" class="collapse">
+                                                    <ol class="generic-list">
+                                                        <li class="item">Verificando o status do Servidor MySql do XAMPP:                                                            
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp stop mysql</code>
+                                                            </div>
+                                                        </li> 
+                                                        <li class="item">Iniciando o Servidor de Banco de Dados do XAMPP:
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp start mysql</code>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="item">Parando o Servidor de Banco de Dados do XAMPP:
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp stop mysql</code>
+                                                            </div>
+                                                        </li>                                                        
+                                                    </ol>
+
                                                 </div> 
 
                                             </div>
 
                                             <div class="col-md-4"> 
                                                 <h2>FTP Proftp</h2>
-                                                <p>1. Para finalizar apenas o Servidor FTP Proftpd, use o comando:<br> luciolemos@dell:~$ sudo /opt/lampp/lampp startftp</p>
+                                                <p>O XAMPP inclui proFTPD, um servidor FTP de código aberto. 
+                                                    Isso facilita a transferência de arquivos para e de um ambiente XAMPP usando FTP.</p>                                              
+
                                                 <p>
-                                                    <a class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#ftppro_detail" href="#ftppro_detail" role="button">My Tips &raquo;</a>
+                                                    <a 
+                                                        class="btn btn-primary btn-sm" 
+                                                        data-toggle="collapse" 
+                                                        data-target="#ftppro_detail" 
+                                                        href="#ftppro_detail" 
+                                                        role="button">Proftp tips &raquo;
+                                                    </a>
                                                 </p> 
+
                                                 <div id="ftppro_detail" class="collapse">
-                                                    <p>Hello!</p>
+                                                    <ol class="generic-list">
+                                                        <li class="item">Para finalizar apenas o Servidor FTP Proftpd, use o comando:
+                                                            <div class="alert" role="alert">
+                                                                <code>luciolemos@dell:~$ sudo /opt/lampp/lampp start ftp</code>
+                                                            </div>
+                                                        </li>                                                        
+                                                    </ol>
+
                                                 </div>
 
                                             </div>
@@ -975,7 +1078,7 @@
                                         revisão de patches da série 2.2.x de lançamentos, que foi descontinuado a partir do lançamento
                                         da nova versão em 14 de agosto de 2019. 
                                     </p>
-
+                                    <!--
                                     <ul>                                            
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
@@ -984,9 +1087,8 @@
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, repellendus.</li>
                                         <li>&#8230;</li>
-                                    </ul>   
-
-
+                                    </ul>
+                                    -->
                                     <p>
                                         O Apache é mantido pela <a href="https://www.apache.org/" title="https://www.apache.org">Apache Software Foundation</a>                                             
                                     </p>
@@ -1022,29 +1124,30 @@
                                     </div>
                                     -->  
                                     <div class="collapse" id="my_apache" style="margin-top: 25px">
-                                        <h2>Apache Server - My tips</h2>
+                                        <h2>Apache HTTP Server - My tips</h2>
                                         <ol class="generic-list">
-                                            <li class="item">Navegando até o diretório <i>htdocs</i> a partir da raiz:
+                                            <li class="item">Verificando a versão do Servidor Apache HTTP:
                                                 <div class="alert alert-dark" role="alert">
-                                                    <code>luciolemos@dell:~$ cd /opt/lampp/<strong>htdocs</strong></code>
+                                                    <code>luciolemos@dell:~$ <kbd>apache2 -v</kbd></code><br>
+                                                    <code>Server version: Apache/2.4.29 (Ubuntu)</code><br>
+                                                    <code>Server built:   2019-09-16T12:58:48</code><br>
+                                                    <code>luciolemos@dell:~$</code>
                                                 </div>
                                             </li>
-
-                                            <li class="item">Criando o diretório <i>dicas</i> dentro de <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
-                                                    <code>luciolemos@dell:/opt/lampp/htdocs$ sudo mkdir <strong>dicas</strong></code>
+                                            <li class="item">Verificando o status do Servidor Apache HTTP:
+                                                <div class="alert alert-dark" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>systemctl status apache2</kbd></code>
                                                 </div>
                                             </li>
-
-                                            <li class="item">Verificando as permissões para o diretório <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
-                                                    <code>luciolemos@dell:/opt/lampp/htdocs$ <strong>ls -lt</strong></code>
-                                                </div> 
+                                            <li class="item">Iniciando o Servidor Apache HTTP:
+                                                <div class="alert alert-dark" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>systemctl start apache2</kbd></code><br>                                            
+                                                </div>
+                                                <p>Digite localhost na barra de endereço do browser. Se a página de teste do Apache carregar, o Servidor foi instalado e iniciado corretamente.</p>
                                             </li>
-
-                                            <li class="item">Dando ao usuário luciolemos, permissão de escrita no diretório <i>htdocs</i>:
-                                                <div class="alert alert-dark " role="alert">
-                                                    <code>luciolemos@dell:~$ sudo <strong>chmod -R 777 /opt/lampp/htdocs</strong></code>
+                                            <li class="item">Parando o Servidor Apache HTTP:
+                                                <div class="alert alert-dark" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>systemctl stop apache2</kbd></code>
                                                 </div>
                                             </li>
                                         </ol>
@@ -1055,12 +1158,148 @@
                     </div><!--row-->
                 </div><!--container-->
             </section><!--Término da Seção 6-->
+
+            <!--Início da Seção 7-->
+            <section id="mysql" class="container-fluid" style="padding-top:0px;padding-bottom:10px">
+                <div class="container">
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--
+                            <div class="">
+                                <a href="service-page.html">
+                                    <img src="assets/img/linux.png" alt="My Tips" style="width:200px;">
+                                    <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
+                                </a>
+                            </div>
+                            -->
+
+                            <!--
+                            <h2>Linux Mint</h2>
+                            -->
+                            <div class="media">
+                                <img src="assets/img/mysql.png" alt="MySql" class="mr-3 mt-3 rounded-0" style="width:auto; height: auto">
+                            </div>
+                            <p>
+                                O MySQL é um Sistema de Gerenciamento de Banco de Dados (SGBD) relacional de código aberto, 
+                                que utiliza a <i>Structured Query Language</i> (SQL), como interface. Está disponível sob a 
+                                licença GPL e é mantido por uma comunidade ativa de desenvolvedores de código aberto&#8228; 
+                                É atualmente um dos sistemas de gerenciamento de banco de dados mais populares do mundo&#8228;                                
+                            </p>
+                            <div class="media border p-3">
+                                <!--
+                                <img src="assets/img/lemos.jpeg" 
+                                     alt="Lúcio Flávio Lemos, Full Stack Developer" 
+                                     class="mr-3 mt-3 rounded-circle" 
+                                     style="width:60px;">
+                                -->
+                                <div class="media-body">
+                                    <h4>Lúcio Lemos <small><i>Postado em Dezembro 13, 2019</i></small></h4>
+
+                                    <p>
+                                        Embora esteja usando em meus projetos o MySQL Community Server 5.7.28, a versão
+                                        mais recente do SGBD é o MySQL Community Server 8.0.18&#8228;
+                                    </p>
+                                    <!--
+                                    <ul>                                            
+                                        <li>Funciona imediatamente, com suporte completo a multimídia e é extremamente fácil de usar;</li>
+                                        <li>É gratuito e de código aberto;</li>
+                                        <li>É orientado pela comunidade;</li>
+                                        <li>Baseado no Debian e Ubuntu, fornece cerca de 30.000 pacotes e um dos melhores gerenciadores de software;</li>
+                                        <li>É seguro e confiável; e</li>
+                                        <li>Suporta muitos idiomas, inclusive o português e utiliza o Cinnamon como seu principal ambiente de desktop.</li>
+                                        <li>&#8230;</li>
+                                    </ul>
+                                    -->
+
+                                    <p>
+                                        A documentação do MySql pode ser acessada na w3, <a href="https://dev.mysql.com/doc/refman/8.0/en" title="https://dev.mysql.com/doc/refman/8.0/en"> &#128073; por aqui</a>.
+                                    </p>
+
+                                    <p>
+                                        <a 
+                                            class="btn btn-primary btn-sm" 
+                                            data-toggle="collapse" 
+                                            data-target="#my_mysql" 
+                                            href="#my_mysql" 
+                                            role="button">My tips &raquo;
+                                        </a>
+                                    </p>
+                                    <!--
+                                    <a data-toggle="collapse" data-target="#mint" href="#mint">                                           
+                                        <img src="assets/img/pinguim.png" alt="My Tips" style="width:60px;">
+                                    </a>
+                                    -->
+
+                                    <!-- Modelo de classe card-->
+                                    <!--
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special title treatment</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <div class="collapse" id="my_mysql" style="margin-top: 25px">
+                                        <h2>MySQL Community Server - <i>Tips</i> de comandos no terminal</h2>
+                                        <ol class="generic-list">
+                                            <li class="item">Verificando a versão do servidor de banco de dados instalada:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>mysql -V</kbd></code><br>  
+                                                    <code>mysql  Ver 14.14 Distrib 5.7.28, for Linux (x86_64) using  EditLine wrapper</code><br>
+                                                    <code>luciolemos@dell:~$</code><br>
+                                                </div>                                                
+                                            </li>
+                                            <li class="item">Verificando o status do Servidor de Banco de Dados MySQL Community Server:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>/etc/init.d/mysql status</kbd></code>                                                    
+                                                </div>                                                
+                                            </li>
+                                            <li class="item">Inicializando o Servidor de Banco de Dados MySQL Community Server.
+                                                É necessário autenticação como usuário <i>root</i> do <strong>SO</strong> (password: root), para iniciar o mysql.service:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>/etc/init.d/mysql start</kbd></code><br>
+                                                    <code>[ ok ] Starting mysql (via systemctl): mysql.service.</code><br>
+                                                    <code>luciolemos@dell:~$</code>
+                                                </div>
+                                            </li>
+                                            <li class="item">Após inicializar o Servidor de Banco de Dados MySQL Community Server com autenticação <i>root</i>, 
+                                                querendo acessar a base de dados no servidor, via terminal, execute como usuário <i>root</i> (password: Lemos35@) do <strong>SGBD</strong>:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>mysql -u root -p</kbd></code><br>
+                                                    <code>Enter password: <kbd>********</kbd></code><br>
+                                                    <code>mysql></code>
+                                                </div>                                               
+                                            </li>
+                                            <li class="item">Iniciando o SGBD <strong>MySql Workbech Community 6.3</strong> via terminal:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>/usr/bin/mysql-workbench</kbd></code><br>                                                  
+                                                </div>                                               
+                                            </li>
+
+                                            <li class="item">Finalizando o Servidor de Banco de Dados MySQL Community Server:
+                                                <div class="alert" role="alert">
+                                                    <code>luciolemos@dell:~$ <kbd>/etc/init.d/mysql stop</kbd></code><br>
+                                                    <code>[ ok ] Stopping mysql (via systemctl): mysql.service.</code><br>
+                                                    <code>luciolemos@dell:~$</code>
+                                                </div>                                                
+                                            </li> 
+                                        </ol>
+                                    </div><!--collapse-->
+                                </div><!--media-body-->
+                            </div><!--media border p-3-->
+                        </div><!--col-md-12-->                   
+                    </div><!--row-->
+                </div><!--container-->
+            </section><!--Término da Seção 7-->
             <hr>
 
         </main>
 
 
-        <div>
+        <!--
+        <div class="footer-dark">
             <footer class="page-footer dark">
                 <div class="container">
                     <div class="row">
@@ -1098,13 +1337,77 @@
                             </ul>
                         </div>
                     </div>
+                </div><br>
+
+                <div class="col item social">                    
+                    <a href="#"><i class="icon ion-social-github"></i></a>
+                    <a href="#"><i class="icon ion-social-css3"></i></a>
+                    <a href="#"><i class="icon ion-social-html5"></i></a>
+                    <a href="#"><i class="icon ion-social-javascript"></i></a>
                 </div>
+
+                
                 <div class="footer-copyright">                    
                     <p class="text-center">Desenvolvido pelo 1º Ten QAO <strong>L</strong>úcio Flávio <strong>Lemos</strong>, <i>Full Stack Developer</i></p>
                     <p>My Tips © 2019 </p>
                 </div>
+               
+                <p class="copyright">Desenvolvido pelo 1º Ten QAO <strong>L</strong>úcio Flávio <strong>Lemos</strong>, <i>Full Stack Developer</i></p>
+
+            </footer>    
+        </div>
+        -->
+
+        <!--Rodapé - início-->
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>HTML</h3>
+                            <ul>
+                                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>                                
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Tecnologias utilizadas</h3>
+                            <ul>
+                                <li><a href="https://linuxmint.com">Linux Mint 19.1</a></li>
+                                 <li><a href="https://netbeans.apache.org">Apache Netbeans 11.2</a></li>
+                                <li><a href="http://www.apache.org">Apache HTTP Server 2.4</a></li>
+                                <li><a href="https://dev.mysql.com/downloads/mysql">MySQL Community Server 8.0.18</a></li>
+                                <li><a href="https://www.php.net/manual/pt_BR/intro-whatis.php">PHP 7.4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>PHP Developer</h3>
+                            <ul>
+                                <li><a href="https://laravel.com">Laravel</a></li>
+                                <li><a href="https://getcomposer.org">Composer</a></li>
+                                <li><a href="https://netbeans.apache.org">Apache Netbeans 11.2</a></li>
+                                <li><a href="verificando-versoes.html">Verificando versões</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>SGBD</h3>
+                            <ul>
+                                <li><a href="https://dev.mysql.com/downloads/workbench">MySQL Workbench 8.0.18</a></li>
+                                <li><a href="https://www.phpmyadmin.net">phpMyAdmin</a></li>                               
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <br>
+                <div class="col item social">
+                    <a href="https://github.com/luciolemos"><i class="icon ion-social-github"></i></a>
+                    <a href="https://www.w3schools.com/css/default.asp"><i class="icon ion-social-css3"></i></a>
+                    <a href="https://www.w3schools.com/html/default.asp"><i class="icon ion-social-html5"></i></a>
+                    <a href="https://www.w3schools.com/js/default.asp"><i class="icon ion-social-javascript"></i></a>
+                </div>                
+                <p class="copyright">Desenvolvido pelo 1º Ten QAO <strong>L</strong>úcio Flávio <strong>Lemos</strong>, <i>Full Stack Developer</i></p>
             </footer>
         </div>
+        <!--Rodapé - início-->
 
 
         <script src="assets/js/jquery.min.js"></script>
@@ -1114,5 +1417,4 @@
         <script src="assets/js/theme.js"></script>
         <script src="https://kit.fontawesome.com/50e1549ef6.js" crossorigin="anonymous"></script>
     </body>
-
 </html>
